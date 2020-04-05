@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    repo: imgs-registry/pets
+    tags: latest
+    dockerfile: web/Dockerfile
