@@ -20,7 +20,7 @@ healthy = True
 version ='1.0'
 hostname = socket.gethostname()
 
-print "Starting web container %s" % hostname
+print ("Starting web container %s" % hostname)
 
 app = Flask(__name__)
 
@@ -99,7 +99,7 @@ def vote():
         elif vote == 'c':
             vote = option_c
         else:
-            print 'error'
+            print ('error')
 
         #Record name & vote
         c.kv.put(name, vote)
